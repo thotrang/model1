@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let x = +prompt("nhập điểm thi giữa kì");
+        let y = +prompt("nhập điểm thi cuối kì");
+        let z = +prompt("nhập điểm kiểm tra");
+        let tb = (x + y + z) / 3;
+        console.log(tb);
+        if (tb < 0 || tb > 10) {
+            alert("nhập điểm không hợp lệ, nhập lại");
+        }
+        else {
+            if (tb < 5)
+                alert("học sinh yếu");
+            else if (tb < 7)
+                alert("học sinh tb");
+            else if (tb < 8)
+                alert("học sinh khá");
+            else
+                alert("học sinh giỏi");
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
