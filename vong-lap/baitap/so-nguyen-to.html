@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x = prompt("nhập số lượng số nguyên muốn in ra");
+        function kiemTra(a) {
+            for (let i = 2; i < a; i++) {
+                if (a % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        let i = 0;
+        let number=2;
+            // for (let number = 2; ; number++) {
+            //     if (kiemTra(number)) {
+            //         document.write(number + "</br>");
+            //         i++;
+            //     }
+            //     if (i == x) break;
+            // }
+            while(i<x){
+                if (kiemTra(number)) {
+                    document.write(number + "</br>");
+                    i++;
+                }
+                number++;
+            }
+    </script>
+</body>
+
+</html>
