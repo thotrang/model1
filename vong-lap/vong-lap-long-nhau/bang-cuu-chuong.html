@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let bang='<table>'
+        for(let i=1;i<=10;i++){
+            bang+='<tr>'
+            for(let j=1;j<=10;j++){
+                bang+='<td>'+i+"*"+j+"="+i*j+'</td>'
+            }
+            bang+='</tr>'
+        }bang+='</table>'
+        document.write(bang);
+    </script>
+        <style>
+            table,td {
+                background-color: aqua;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+            }
+            td{
+                margin: 0 auto;
+                background-color: rgb(243, 157, 157);
+                
+            }
+        </style>
+</head>
+<body>
+    
+</body>
+</html>
