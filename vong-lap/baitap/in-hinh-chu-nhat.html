@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         let a=prompt("nhập chiều dài");
+         let b=prompt("nhập chiều rộng");
+        let enter='</br>'
+        let text1='';
+        let text2='';
+        function splace(x){
+            let text3='';
+            for(let i=0;i<x;i++){
+                text3+='&nbsp&nbsp';
+            }
+            return text3;
+        }
+        for(let j=0;j<a;j++){
+            text2+='*';
+        }
+        document.write(text2);
+        document.write(enter);
+
+        for(let i=0;i<(b-2);i++){
+            text1+='*'+splace(a-2)+'*'+enter;           
+        }document.write(text1);
+
+        document.write(text2);
+        document.write(enter);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

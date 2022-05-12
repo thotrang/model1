@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let n=prompt("nhập n");
+        let text1 = '';
+        for (let i = 0; i < n; i++) {
+            text1 += '*';
+            document.write(text1);
+            document.write("</br>");
+        }
+        document.write("</br></br>")
+
+        let text2 = '';
+        for (let i = 0; i < n; i++) {
+                text2 += '*';
+            } 
+        for (let j = 0; j < n; j++) {
+            
+            document.write(text2);
+            document.write("</br>");     
+            text2 = text2.slice(0,(text2.length-1));
+        }
+        document.write("</br></br>")
+
+           
+        let text3_1='';
+        let text3_2='';
+        for (let i = 0; i < n; i++) {
+                text3_1 += '*';
+            }
+        for (let j = 0; j < n; j++) {
+            
+            document.write(text3_2+text3_1);
+            document.write("</br>");     
+            text3_1 = text3_1.slice(0,(text2.length-1));
+            text3_2+='&nbsp&nbsp';
+        }
+        document.write("</br></br>")
+
+        
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

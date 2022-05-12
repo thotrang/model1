@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a;
+        do {
+            a = prompt("nhập số lượng cần in ");
+            if (a < 1) {
+                alert("số liệu không hợp lệ. Vui lòng nhập lại");
+            }
+        } while (a < 1);
+
+        function F(x) {
+            if (x == 0) return 0;
+            if (x == 1) return 1;
+            else return F(x - 1) + F(x - 2);
+        }
+
+        let text = "";
+        let center = '</br>';
+        for (let i = 0; i < a; i++) {
+            text += F(i) + center;
+        }
+        document.write(text);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
