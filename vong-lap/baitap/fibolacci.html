@@ -15,18 +15,36 @@
             }
         } while (a < 1);
 
-        function F(x) {
-            if (x == 0) return 0;
-            if (x == 1) return 1;
-            else return F(x - 1) + F(x - 2);
-        }
+        // function F(x) {
+        //     if (x == 0) return 0;
+        //     if (x == 1) return 1;
+        //     else return F(x - 1) + F(x - 2);
+        // }
 
-        let text = "";
-        let center = '</br>';
-        for (let i = 0; i < a; i++) {
-            text += F(i) + center;
+        // let text = "";
+        // let center = '</br>';
+        // for (let i = 0; i <br a; i++) {
+        //     text += F(i) + center;
+        // }
+        // document.write(text);
+
+        let num1=0;
+        let num2=1;
+        let num3;
+        let i=3;
+        let enter='</br>';
+        if(a==1)
+            document.write(num1);
+        else{
+            document.write(num1+enter+num2+enter);
+            while(i<=a){
+                num3=num1+num2;
+                document.write(num3+enter);
+                i++;
+                num1=num2;
+                num2=num3;
+            }
         }
-        document.write(text);
     </script>
 </head>
 
